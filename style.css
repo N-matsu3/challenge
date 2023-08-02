@@ -138,3 +138,8 @@ nav {
 .image-box:nth-child(6) {
   background-image: url(img/webcamp-mother.png);
 }
+
+.feature{
+  width: 980px;
+  margin: 0 auto;
+}
