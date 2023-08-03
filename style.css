@@ -140,6 +140,19 @@ nav {
 }
 
 .feature{
+  padding-bottom: 90px;
   width: 980px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.strength {
+  width: 320px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.strength-icon {
+  font-size: 60px;
 }
