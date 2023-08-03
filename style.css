@@ -147,12 +147,32 @@ nav {
 }
 
 .strength {
-  width: 320px;
+  padding-bottom: 90px;
   height: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
+.strength-title {
+  font-size: 20px;
+  color: #000000;
+}
+
+.strength-content {
+  width: 320px;
+  margin-right: 10px
+
+}
+
+.strength-content:nth-child(3n) {
+  margin-right: 0;
+}
+
 .strength-icon {
   font-size: 60px;
+}
+
+.strength-text {
+  font-size: 16px;
+  color: #000000;
 }
