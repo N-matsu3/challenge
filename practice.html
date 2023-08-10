@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+
+    <script src="https://kit.fontawesome.com/377c488508.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style2.css" />
+    
+    <script type="text/javascript" src="js/sample.js"></script>
+
+    <title>practice</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <a class="btn" href="URL" target="_blank">
+        DMM WEB CAMPの<br>サービス詳細はこちら</a>
+      </div>
+
+      <div class="image">
+        <img class="anime_test" src="logo.png">
+      </div>
+
+
+        <div class="rotate_test">回転させます</div>
+
+        <div class="rotate_test1">回転させます</div>
+
+        <div class="rotate_test2">オンマウスで</br>回転させます</div>
+
+        <div class="rotate_test3">オンマウスで</br>回転させます</div>
+
+        <img id="mypic" src="img/webcamp.png" width="400" height="300" />
+
+        <div class="slideshow">
+          <script>
+          var pics_src = new Array("img/webcamp.png","img/websuku.png","img/webcamp-mother.png");
+          var count = 0;
+          var slide = function(){
+              count++;
+              if(count === 3){
+                  count = 0;
+              }
+              setTimeout(slide, 2000);
+              document.getElementById("mypic").src = pics_src[count];
+            }
+            slide();
+          </script>
+        </div>
+
+        <div class="enquete">
+          <div id="true_area">
+            <div class="head">賛成</div>
+          </div>
+
+          <div id="false_area">
+            <div class="head">反対</div>
+          </div>
+
+          <div class="btn_area">
+            <div id="true_btn" class="btn1">賛成に1票</div>
+            <div id="false_btn" class="btn1">反対に1票</div>
+          </div>
+
+        </div>
+
+    </main>
+  </body>
+</html>
