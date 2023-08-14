@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: auto;
+  height: 70px;
+  background-color: rgb(131,158,171)
+}
+
+.logo-image {
+  height: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /*flexにするとnavが右寄せにならないのでここでabsoluteを使い無理やり左上に配置している、、*/
+  position: absolute;
+    top: 0px;
+    left: 10px;
+
+
+}
+
+.nav-list {
+  text-align: right;
+
+}
+
+.nav-list-item {
+  display: inline;
+  line-height: 70px;
+  list-style: none;
+  padding: 0 10px;
+  color: #FAFAFA;
+
+}
