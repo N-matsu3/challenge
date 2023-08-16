@@ -8,9 +8,16 @@ https://it-biz.online/web-design/script/
 👉ヘッダーに<script type="text/javascript" src="〇〇（jsファイルがあるところを）"></script>
 
 
-流れる画像の参考
+my-drive-log.html
+参考サイト
+スライドショーの参考
 https://coco-factory.jp/ugokuweb/move01/6-1-8/
 
 ■ 使用したライブラリ
 ・jQuery
 ・slick（https://kenwheeler.github.io/slick/）
+
+
+画像内側に陰を入れる
+box-shadowの使い方
+■ https://ics.media/entry/200406/

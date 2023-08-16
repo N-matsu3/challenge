@@ -40,6 +40,11 @@ body {
 
 }
 
+.nav-list-item a {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
 
 .about-area {
   width: 100%;
@@ -47,6 +52,8 @@ body {
   background-image: url(img/Camry.jpg);
   background-size: cover;
   background-position: bottom;
+  box-shadow: inset -50px 0 100px 0 rgb(0, 0, 0),
+              inset 50px 0 100px 0 rgb(0, 0, 0);
 }
 
 .about-text {
@@ -100,12 +107,14 @@ body {
   text-align: center;
   margin: 0 0 0 auto;
   background-color: rgba(89, 87, 90, 0.7);
+  box-shadow: inset -10px 10px 10px 0 rgba(0, 0, 0, .2),
+              inset 10px -10px 10px 0 rgba(0, 0, 0, .2);
 
 }
 
 .image-content {
   width: 700px;
-  height: 500px;
+  height: 720px;
   margin: 0 auto;
 }
 
@@ -117,7 +126,7 @@ body {
   position:relative;
 	z-index: 1;
 	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
-	height: 540px;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+	height: 500px;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
 }
 /*　背景画像設定　*/
 
@@ -140,7 +149,7 @@ body {
 .slider-item {
     /*width: 100%;*/
     /*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
-    height:100vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    height:500px;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
     background-repeat: no-repeat;/*背景画像をリピートしない*/
     background-position: center;/*背景画像の位置を中央に*/
     background-size: 500px auto;
@@ -177,7 +186,7 @@ body {
 	position: relative;
 	z-index: 3;
     text-align:center;
-	margin:-120px 0 0 0;/*ドットの位置*/
+	margin:10px 0 0 0;/*ドットの位置*/
 }
 
 .slick-dots li {
@@ -202,7 +211,9 @@ body {
 .map {
   width: 100%;
   height: 540px;
-  margin: 0 auto;
+  padding-top: 90px;
+  text-align: center;
+  /*iframeはCSSが効かないらしいので、この方法で中央よせ*/
 }
 
 footer {
