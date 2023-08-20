@@ -7,7 +7,7 @@
 header {
   width: auto;
   height: 70px;
-  background-color: rgb(131,158,171);
+  background-color: #425F79;
 }
 
 body {
@@ -246,8 +246,35 @@ body {
 
 }
 
+.profile {
+  width: 100%;
+  height: 540px;
+  padding-top: 90px
+}
+
+.profile-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  background-image: url(img/my-icon.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.profile-text {
+  width: 300px;
+  height: 200px;
+  margin-left: 50px;
+}
+
 footer {
   width: auto;
   height: 70px;
-  background-color: rgb(131,158,171);
+  background-color: #425F79;
 }
