@@ -2,7 +2,11 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
     <script src="https://kit.fontawesome.com/377c488508.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="logstyle.css" />
@@ -11,28 +15,33 @@
   </head>
 
   <body>
-    <header>
-        <!--ナビゲーション-->
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-list-item"><a href="#about">About</a></li>
-            <li class="nav-list-item"><a href="#blog">blog</a></li>
-            <li class="nav-list-item">Plofile</li>
-            <li class="nav-list-item">Contact</li>
-          </ul>
-        </nav>
-
-         <!--ロゴイメージ-->
+    <header class="header">
+      <div class="logo">
         <a href="my-drive-log.html">
           <img class="logo-image" src="img/drive-logo.png">
         </a>
+      </div>
+      <button class="hamburger-menu" id="js-hamburger-menu">
+        <span class="hamburger-menu__bar"></span>
+        <span class="hamburger-menu__bar"></span>
+        <span class="hamburger-menu__bar"></span>
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-item"><a href="#about" class="navigation__link">About</a></li>
+          <li class="navigation__list-item"><a href="#blog" class="navigation__link">blog</a></li>
+          <li class="navigation__list-item"><a href="#collection" class="navigation__link">collection</a></li>
+          <li class="navigation__list-item"><a href="#Access" class="navigation__link">Access</a></li>
+          <li class="navigation__list-item"><a href="#profile" class="navigation__link">profile</a></li>
+        </ul>
+      </nav>
 
     </header>
 
     <div class="about-area">
       <div class="about-text">
         <div class="about-content">
-          <h1 id="about" class="text-title">About</h2>
+          <div id="about" class="text-title">About</div>
           <div class="border"></div>
           <p>このブログはドライブが大好きな筆者と</br>
           筆者の愛車、TOYOTAのCAMRYとのドライブログです。
@@ -62,7 +71,7 @@
 
       <div class="image-content">
         <div class="about-content">
-          <div class="text-title under-border">collection</div>
+          <div id="collection" class="text-title under-border">collection</div>
           <div class="border"></div>
         </div>
 
@@ -80,7 +89,7 @@
 
 
       <div class="access">
-        <div class="text-title under-border">Access</div>
+        <div id="Access" class="text-title under-border">Access</div>
         <div class="border"></div>
         <div class="map-area">
           <div class="map">
@@ -94,27 +103,31 @@
       </div>
 
       <div class="profile">
-        <div class="text-title">profile</div>
+        <div id="profile" class="text-title under-border">profile</div>
+        <div class="border"></div>
         <div class="profile-area">
           <div class="profile-image"></div>
           <div class="profile-text">
-          <p>自己紹介</br>
-             まつもと。</br>
+          <p>まつもとです！</br>
              愛車カムリとのドライブ大好き！</br>
-             推しぬいと出かける事もしばしば。</p>
-        </div>
+             </br>
+             推しぬいと出かける事もしばしば。</br>
+             らくがきやらゲームやら好きな多趣味な人間です笑
+           </p>
+          </div>
         </div>
 
       </div>
 
+    <footer>© 2023 Narumi Matsumoto.</footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <!--自作のJS-->
     <script src="js/log.js"></script>
 
-    <footer></footer>
   </body>
 
 </html>

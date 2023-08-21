@@ -1,3 +1,11 @@
+$(function () {
+  $('#js-hamburger-menu, .navigation__link').on('click', function () {
+    $('.navigation').slideToggle(500)
+    $('.hamburger-menu').toggleClass('hamburger-menu--open')
+  });
+});
+
+
 $('.slider').slick({
 		fade:true,//切り替えをフェードで行う。初期値はfalse。
 		autoplay: true,//自動的に動き出すか。初期値はfalse。
@@ -19,3 +27,4 @@ $('.slider').slick({
 $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
     $('.slider').slick('slickPlay');
 });
+

@@ -4,26 +4,112 @@
   box-sizing: border-box;
 }
 
-header {
-  width: auto;
-  height: 70px;
-  background-color: #425F79;
-}
+/*header {*/
+/*  width: auto;*/
+/*  height: 70px;*/
+/*  background-color: #425F79;*/
+/*}*/
+
 
 body {
   background-color: #9BBACD;
 }
 
+p {
+  font-family: "Sawarabi Mincho";
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #425F79;
+
+}
+.logo {
+  font-weight: 700;
+  padding-left: 14px;
+}
+.hamburger-menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: none;
+  background: transparent;
+  appearance: none;
+  padding: 0;
+  cursor: pointer;
+}
+.hamburger-menu__bar {
+  display: inline-block;
+  width: 44%;
+  height: 2px;
+  background: #FAFAFA;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .5s;
+}
+.hamburger-menu__bar:first-child {
+  top: 16px;
+}
+.hamburger-menu__bar:nth-child(2) {
+  top: 24px;
+}
+.hamburger-menu__bar:last-child {
+  top: 32px;
+}
+.hamburger-menu--open .hamburger-menu__bar {
+  top: 50%;
+}
+.hamburger-menu--open .hamburger-menu__bar:first-child {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:last-child {
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
+  display: none;
+}
+.navigation {
+  display: none;
+  background: #242424;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: 9999;
+}
+.navigation__list {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation__list-item {
+  border-bottom: solid 1px #474747;
+}
+.navigation__list-item:first-child {
+  border-top: solid 1px #474747;
+}
+.navigation__link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  padding: 24px 0;
+  transition: .5s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .navigation__link:hover {
+    background: #333;
+  }
+}
+
+
 .logo-image {
   height: 70px;
-  margin-left: 10px;
-  margin-right: 10px;
-  /*flexにするとnavが右寄せにならないのでここでabsoluteを使い無理やり左上に配置している、、*/
-  position: absolute;
-    top: 0px;
-    left: 10px;
-/*justify positionを使えば良かったらしい*/
-
 }
 
 .nav-list {
@@ -72,6 +158,8 @@ body {
 
 .text-title {
   font-size: 35px;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
   /*text-shadow: 3px 3px 5px rgba(14, 51, 29, 0.7);*/
   text-shadow: 0 1px rgba(0, 0, 0, 0.6);
   color:#CABD9D
@@ -227,6 +315,8 @@ body {
   margin: 0 auto;
 }
 
+
+
 .map {
   box-shadow: 3px 3px 10px 0 rgba(0,0,0,.8);
 }
@@ -249,7 +339,7 @@ body {
 .profile {
   width: 100%;
   height: 540px;
-  padding-top: 90px
+  padding-top: 90px;
 }
 
 .profile-area {
@@ -261,20 +351,64 @@ body {
 .profile-image {
   width: 200px;
   height: 200px;
-  background-image: url(img/my-icon.jpg);
+  background-image: url(img/prf.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 50%;
 }
 
+
 .profile-text {
-  width: 300px;
+  width: 500px;
   height: 200px;
-  margin-left: 50px;
+  align-items: center;
+  border-radius: 20px 0 20px 0;
+  background-color: #CADFE7;
+  padding: 25px 0 0 20px;
+  margin: 0 0 0 50px;
+
+
 }
 
 footer {
-  width: auto;
+  width: 100%;
   height: 70px;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
   background-color: #425F79;
+}
+
+@media screen and (max-width:425px) {
+
+  .header {
+    width: 100%
+  }
+
+  .about-area {
+    width: 100%;
+  }
+
+  .map-area {
+    display: block;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .map-text {
+    width: 100%;
+    margin: 10px 50px 0 50px;
+
+  }
+
+  .profile-area {
+    display: block;
+    height: 900px;
+  }
+
+  .profile-text {
+    width: 100%;
+  }
 }
