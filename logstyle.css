@@ -349,7 +349,6 @@ p {
 
 .profile-area {
   display: flex;
-  width: 80%;
   justify-content: center;
 }
 
@@ -376,11 +375,14 @@ p {
 .sns-area {
   margin: 0 auto;
   padding: 30px;
-}
+  display: flex;
+  justify-content:flex-end;
+  }
 
 .icon {
   font-size: 60px;
   color: #425F79;
+  padding: 10px;
 }
 
 .icon:hover{
