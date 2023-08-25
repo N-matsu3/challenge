@@ -21,10 +21,12 @@ font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 .area0 {
-  display: flex;
+  width: 100%;
 }
 
 .area1 {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +38,20 @@ background: radial-gradient(circle, rgba(250,226,206,1) 0%, rgba(193,219,251,1) 
 }
 
 .window1 {
-  font-size: 60px;
-
+  font-size: 90px;
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  color: white;
 }
 
 .window2 {
-  font-size: 60px;
+  font-size: 90px;
+  position: absolute;
+  bottom: 70px;
+  right: 30px;
+  color: white;
+
 }
 
 .image-item {
@@ -50,11 +60,12 @@ background: radial-gradient(circle, rgba(250,226,206,1) 0%, rgba(193,219,251,1) 
   margin-right: 100px;
 }
 
-.image-item:nth-child(3) {
+.image-item:nth-child(3n) {
   margin-right: 0;
 }
 
 .area2 {
+  position: relative;
   width:100%;
   height: 420px;
   margin-top: 30px;
@@ -63,27 +74,58 @@ background: radial-gradient(circle, rgba(250,226,206,1) 0%, rgba(193,219,251,1) 
   background-size: cover;
 }
 
+.area2-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: gainsboro;
+  font-size: 20px;
+}
+
 .intro {
   width: 100%;
   height: auto;
   padding: 30px 0;
+
+}
+
+.intro-title {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px 0 0 0;
+  color: dimgray;
+  background-color: skyblue;
   text-align: center;
-  display: inline-block;
-  vertical-align: middle;
 
 }
 
 .favorite {
   display: flex;
+  flex-wrap:wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 420px;
-  background-color: lightgray;
+  height: 100%;
+  padding: 70px 0 70px 0;
+  background-color: lightsteelblue;
+}
+
+.border {
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  border-style: dashed;
+  color: ghostwhite;
+}
+
+.br {
+  width: 100%;
+  height: 50px;
 }
 
 .favorite:nth-child(2n) {
-  background-color: lightsteelblue;
+  background-color: lightgray;
 
 }
 
@@ -101,4 +143,10 @@ background: radial-gradient(circle, rgba(250,226,206,1) 0%, rgba(193,219,251,1) 
   overflow-wrap:  break-word;
   background-color: whitesmoke;
   border-radius: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: #336699;
 }
