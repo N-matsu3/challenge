@@ -27,3 +27,8 @@ box-shadowの使い方
 参考　https://rilaks.jp/blog/hamburgermenu-jquery/
 複数のjQuery導入の際、<script>タグの順番も気をつけないとほかの機能も崩れる
 
+◆cloud.html
+スクロールでふわっと出てくる表現
+👉jQueryとjavascriptの違いを理解できていなかったが、今回で理解できた
+今回はjQueryで実装したが、javascriptで実装した方が動作が重くならない。
+■こちらで近しい動作がjavascriptで実装できそう→http://sweb-den.com/js-scroll
